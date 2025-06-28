@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Martino</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Martino</div>
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Hola, soy Martino</h1>
+            <p>Estudiante de programación, futuro desarrollador Full Stack</p>
+            <a
+              href="https://github.com/martinoum"
+              target="_blank"
+              class="btn-primary"
+            >
+              <i class="fab fa-github"></i>
+              Ver mi GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title fade-in">Mis Proyectos</h2>
+          <div class="projects-grid">
+            <div class="project-card fade-in">
+              <div class="project-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <h3>Calculadora</h3>
+              <p>
+                Proyecto con interfaz gráfica, simple y funcional. Una
+                calculadora completa con operaciones básicas y con una interfaz
+                intuitiva y responsiva.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <a
+                href="https://github.com/martinoum/Calculadora/settings/pages"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Ver en GitHub
+              </a>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <h3>Pato-Runner</h3>
+              <p>
+                Juego estilo runner en JavaScript, similar al famoso dinosaurio
+                de Chrome. Controla un pato que debe esquivar obstáculos
+                mientras corre sin parar. Incluye sistema de puntuación,
+                animaciones fluidas y dificultad progresiva.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Game Logic</span>
+              </div>
+              <a
+                href="https://martinoum.github.io/Pato-Runner/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Ver en GitHub
+              </a>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-icon">
+                <i class="fas fa-question-circle"></i>
+              </div>
+              <h3>Quiz Interactivo</h3>
+              <p>Por ver....</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <a
+                href="https://github.com/martinoum"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Ver en GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text fade-in">
+              <h2>Sobre Mí</h2>
+              <p>
+                Soy estudiante de programación con un gran interés en el
+                desarrollo backend y y frotend. Me apasiona aprender nuevas
+                tecnologías. Actualmente me estoy formando en python, javascript
+                y java.
+              </p>
+              <p>
+                Mi enfoque está en crear soluciones prácticas y eficientes,
+                siempre buscando las mejores prácticas en el desarrollo. Me
+                motiva resolver problemas complejos y convertir ideas en código
+                funcional.
+              </p>
+            </div>
+            <div class="skills-list fade-in">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-user-check"></i>
+                </div>
+                <span>Responsabilidad</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <span>Iniciativa</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <span>Creatividad</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <span>Backend Development</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title fade-in">Contacto</h2>
+          <div class="contact-content">
+            <div class="contact-info fade-in">
+              <h3>¡Conectemos!</h3>
+              <div class="contact-links">
+                <a
+                  href="https://github.com/martinoum"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  <i class="fab fa-github"></i>
+                  <div>
+                    <strong>GitHub</strong>
+                    <p>Revisa mis proyectos</p>
+                  </div>
+                </a>
+                <a href="mailto:martino@ejemplo.com" class="contact-link">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <p>martinouvillamorales@gmail.com</p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/martino-uvilla-morales-35b843213/"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <div>
+                    <strong>LinkedIn</strong>
+                    <p>Conecta conmigo</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Martino. Desarrollado con ❤️ y CSS puro.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
